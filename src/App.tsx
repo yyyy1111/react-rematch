@@ -3,6 +3,7 @@ import { Button } from 'antd';
 import './App.less';
 import RouterDemo from './routerDemos'
 import Hello from './demos/Hello'
+import Hellox from './demos/StatefulHello'
 import {BrowserRouter } from 'react-router-dom';
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
         </BrowserRouter>
         <h2 className='titleText'>react-ts使用</h2>
         <Hello name='TS' enthusiasmLevel={10}/>
+        <Hellox />
       </div>
     );
   }
