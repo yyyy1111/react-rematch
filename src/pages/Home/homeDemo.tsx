@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { withRouter} from 'react-router-dom';
-import styles from './styles/homeDemo.less'
+import styles from './styles/homeDemo.module.less'
 class HomeDemo extends Component<any>{
   
   render(){
