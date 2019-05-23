@@ -1,9 +1,7 @@
 import React, { Component } from 'react';
 import {BrowserRouter as Router, Route, Link,withRouter} from 'react-router-dom';
 class RouterDemo extends Component<any> {
-  constructor(props:any){
-    super(props)
-  }
+  
   render(){
     return (
       
