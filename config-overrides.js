@@ -1,8 +1,13 @@
+const path = require('path');
 const {
   override,
   fixBabelImports,
-  addLessLoader
+  addLessLoader,
+  addWebpackAlias
 } = require('customize-cra');
+// function resolve(dir){
+//   return path.join(__dirname,'.',dir)
+// }
 module.exports = override(
   fixBabelImports('import', {
     libraryName: 'antd',
@@ -18,4 +23,10 @@ module.exports = override(
     noIeCompat: true,
     localIdentName: '[local]--[hash:base64:5]'
   }),
+  addWebpackAlias({
+    // ['@']: resolve('src'),
+    ['Header']:path.resolve(__dirname,'src/components/Header'),
+  })
+    
+  
 )
