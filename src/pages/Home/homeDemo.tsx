@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 // import { withRouter} from 'react-router-dom';
+import styles from './styles/homeDemo.module.less'
 class HomeDemo extends Component<any>{
   
   render(){
     return(
      <div>
-       this is home page!
+       <div className={styles.container}>
+        <div className={styles.left}>left</div>
+        <div className={styles.right}>right</div>
+       </div>
      </div>
     )
   }
