@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './styles/ba.less'
 /**
  * 路由、ts案例y用这个根元素
  */
