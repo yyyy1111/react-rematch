@@ -24,8 +24,9 @@ module.exports = override(
     localIdentName: '[local]--[hash:base64:5]'
   }),
   addWebpackAlias({
-    // ['@']: resolve('src'),
-    ['Header']:path.resolve(__dirname,'src/components/Header'),
+    ['@']: path.resolve(__dirname, './src'),
+    // '@comp': path.resolve(__dirname, './src/components'),
+    // '@Header':path.resolve(__dirname,'./src/components/Header/Header'),
   })
     
   
